@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+/* 1050px */
+#main .main_bg {
+    width: 100%;
+}
+#main .main_bg h1 {text-align: center;}
+.slider {
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.slider div{
+    width: 100%;
+    height: 450px;
+}
+
+/* 920px */
+@media screen and (max-width:920px) {
+    #main .main_bg {
+       height: 500px;
+       margin-bottom: 200px;
+    }
+    #main .main_bg h1 {font-size: 100px;}
+    .inner_01 .main_title h2 {font-size: 20px;}
+    .inner_01 .main_title h2 span {font-size: 30px;}
+    .inner_01 .main_title .text {font-size: 15px;}
+    .main_bg figure {
+        position: absolute;
+        top: 70%; left: 50%;
+        width: 420px;
+        height: 500px;
+    }
+    .main_bg figure > img {
+        width: 100%;
+        height: 100%;
+    }
+    .slider div{height: 400px;}
+    
+    /* event 영역 */
+    .event {height: 70vh;}
+    .event .event_bg .event_text {
+        top: -50px;
+        padding: 30px 50px;
+        width: 500px;
+    }
+    .event_text strong {font-size: 18px;}
+    .event_text ul > li h2 {font-size: 18px;}
+    .event_text ul > li .text {font-size: 14px;}
+
+    /* gallery영역 */
+    .swiper {width: 96%;}
+      .swiper-slide img {
+        margin: 0 auto;
+        width: 95%;
+        height: 99%;
+      }
+      .g-slide {
+        height: 650px;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .gsub-slide {
+        height: 250px;
+        padding: 10px 0;
+        margin-bottom: 100px;
+      }
+      .gsub-slide .swiper-slide {
+        width: 10%;
+        height: 200px;
+        opacity: 0.4;
+      }
+      .gsub-slide .swiper-slide-thumb-active {opacity: 1;}
+      .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {padding-right: 50px;}
+      .swiper-button-prev, .swiper-rtl .swiper-button-next {padding-left: 25px;}
+}
+
+ /* 700px */
+  @media screen and (max-width:700px) {
+    #main .main_bg {
+      height: 400px;
+      margin-bottom: 180px;
+   }
+   #main .main_bg h1 {font-size: 80px;}
+    .inner_01 .main_title h2 {font-size: 18px; padding-top: 5px;}
+    .inner_01 .main_title h2 span {font-size: 25px;}
+    .inner_01 .main_title .text {font-size: 15px;}
+    .main_bg figure {
+        position: absolute;
+        top: 70%; left: 50%;
+        width: 350px;
+        height: 400px;
+    }
+    .slider div{height: 300px;}
+
+    /* event 영역 */
+    .event {
+      margin-top: 100px; 
+      margin-bottom: 120px;
+      height: 70vh;
+    }
+    .event .event_bg .event_text {
+        top: 0;
+        padding: 30px 50px;
+        width: 100%;
+        height: 70vh;
+    }
+    /* gallery영역 */
+    .p_swiper {display: none;}
+    .m_swiper {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: 500px;
+      object-fit: center;
+      margin-bottom: 100px;
+    }
+    .swiper-pagination-fraction {
+      position: absolute;
+      color: #111;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+      margin-top: -80px;
+      color: #fff;
+    }
+    .swiper-pagination-fraction {margin-bottom: 68px;}
+  }
+
+  /* 550px */
+  @media screen and (max-width:550px) {
+    #main .main_bg {
+      height: 380px;
+      margin-bottom: 150px;
+   }
+   #main .main_bg h1 {font-size: 75px;}
+    .inner_01 .main_title h2 {font-size: 15px; padding-top: 8px;}
+    .inner_01 .main_title h2 span {font-size: 20px;}
+    .inner_01 .main_title .text {font-size: 14px;}
+    .main_bg figure {
+        position: absolute;
+        top: 70%; left: 50%;
+        width: 300px;
+        height: 350px;
+    }
+    .slider {
+      width: 100%;
+      padding-left: 5px;
+      box-sizing: border-box;
+  }
+    .slider div{height: 280px; margin-right: 5px;}
+
+    /* event 영역 */
+    .event {
+      margin-top: 80px; 
+      margin-bottom: 90px;
+      height: 100%;
+    }
+    .event .event_bg .event_text {
+        position: static;
+        padding: 20px 40px;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .event_text strong {font-size: 15px; margin-bottom: 15px;}
+    .event_text ul > li h2 {font-size: 15px;}
+    .event_text ul > li .text {font-size: 12px;}
+
+    /* gallery영역 */
+    .p_swiper {display: none;}
+    .m_swiper{display: block;}
+    .swiper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-pagination-fraction {margin-bottom: 68px;}
+  }
+
+  /* 400px */
+  @media screen and (max-width:400px) {
+    #main .main_bg {
+      height: 300px;
+      margin-bottom: 150px;
+   }
+   #main .main_bg h1 {font-size: 65px;}
+    .inner_01 .main_title h2 {font-size: 14px; padding-top: 8px;}
+    .inner_01 .main_title h2 span {font-size: 20px;}
+    .inner_01 .main_title .text {font-size: 12px;}
+    .inner_01 .main_title h2:before,
+    .inner_01 .main_title h2:after {width: 70%;}
+    .inner_01 .main_title h2:before {top: -10px;}
+    .inner_01 .main_title h2:after {top: 50px;}
+    .main_bg figure {
+        position: absolute;
+        top: 70%; left: 50%;
+        width: 250px;
+        height: 300px;
+    }
+    .slider {
+      width: 100%;
+      padding-left: 5px;
+      box-sizing: border-box;
+    }
+    .slider div{height: 200px; margin-right: 5px;}
+
+    /* event 영역 */
+    .event {
+      width: 100%;
+      margin-top: 80px; 
+      margin-bottom: 80px;
+      height: 100%;
+
+    }
+    .event_text strong {
+      font-size: 15px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+    .event .event_bg .event_text {
+        position: static;
+        padding: 10px 20px;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .event_text ul > li h2 {font-size: 14px;}
+    .event_text ul > li .text {font-size: 12px;}
+
+    /* gallery영역 */
+    .p_swiper {display: none;}
+    .m_swiper {display: block;}
+    .swiper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide img {height: 300px;}
+    .swiper-pagination-fraction {margin-bottom: 68px;}
+  }

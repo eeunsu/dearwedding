@@ -1,0 +1,222 @@
+@charset "UTF-8";
+@import url(../common.css);
+
+/* 1050px */
+/* header */
+header .p_hide{display: block;}
+header .m_hide, header .btn_mobile, header .logo_title, .btnclose{display: none;}
+header .m_gnb_bg{
+    width: 100%;
+    padding: 10px 2%;
+    box-sizing: border-box;
+    height: 60px;
+}
+header .m_gnb_area{
+    width: 100%;
+}
+.m_gnb_area > .logo{
+    float: left;
+    margin-top: -10px;
+    margin-right: 20px;
+}
+.m_gnb_area .m_gnb{
+    float: left;
+    width: 75%;
+}
+.m_gnb_area .m_gnb > li > a{font-size: 16px;}
+.login.m_login{
+    float: right;
+    position: static;
+    transform: none;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* 1024px */
+@media screen and (min-width:816px) and (max-width:1024px){
+    header .p_hide{display: block;}
+header .m_hide, header .btn_mobile, header .logo_title, .btnclose{display: none;}
+header .m_gnb_bg{
+    width: 100%;
+    padding: 10px 2%;
+    box-sizing: border-box;
+    height: 60px;
+}
+header .m_gnb_area{
+    width: 100%;
+}
+.m_gnb_area > .logo{
+    float: left;
+    margin-top: -10px;
+    margin-right: 20px;
+}
+.m_gnb_area .m_gnb{
+    float: left;
+    width: 75%;
+}
+.m_gnb_area .m_gnb > li > a{font-size: 16px;}
+.login.m_login{
+    float: right;
+    position: static;
+    transform: none;
+    margin-top: 10px;
+    font-size: 12px;
+}
+}
+
+/* 815px */
+@media screen and (max-width:815px) {
+        /* 공통 */
+        header .btn_mobile, header .logo_title, .btnclose{display: block;}
+        .p_hide{display: block;}
+        .m_hide{display: none;}
+    
+        /* header */
+        header{
+            position: relative;
+            height: 60px;
+            padding: 10px 2%; box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .m_gnb_area > .logo{float: none; margin: 0;}
+        header .logo_title{
+            line-height: 60px;
+            font-size: 30px;
+            color:#799d8a;
+            font-family: "Dancing Script", cursive;
+        }
+        header .logo_title > span{color:#f9ad97}
+        header .btn_mobile{
+            display: block;
+            line-height: 60px;
+            width: 26px; height: 20px;
+            background: url(../../img/common/m_menu.png) no-repeat center/cover;
+        }
+    
+        /* m_gnb */
+        header .m_gnb_bg{
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            width: 100%; height:100vh;
+            z-index: 5;
+            background: rgba(0,0,0,0.7);
+            display: none;
+            padding: 0;
+        }
+        .m_gnb_bg.on{display: block;}
+        header .m_gnb_area{
+            position: absolute;
+            top: 0; right: -100%;
+            width: 70%; height: 100vh;
+            background: #fff;
+        }
+        .m_gnb_area > .logo > a{
+            margin: 20px auto 10px;
+            width: 80px; height: 80px;
+        }
+        .m_gnb_area .m_gnb{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+        .login.m_login{
+            font-size: 14px;
+            float: none;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .login.m_login span > a:last-child{margin: 0;}
+        .login span+span:after{left: -3px;}
+        .m_gnb_area .m_gnb > li{
+            width: 100%;
+            position: relative;
+        }
+        .m_gnb_area .m_gnb > li+li::after{
+            content: '';
+            position: absolute;
+            top: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 250px; height: 1px;
+            background: rgba(249, 172, 151, 0.493);
+        }
+        .m_gnb_area .m_gnb > li > a{
+            font-size: 16px;
+            width: 100%;
+            padding: 20px 0; box-sizing: border-box;
+            text-align: center;
+        }
+        .btnclose{
+            position: absolute;
+            top: -10px; right: 20px;
+            font-size: 70px;
+            font-weight: 100;
+            color: #444;
+        }
+    
+        /* footer */
+        footer{
+            padding: 15px 6%;
+            position: static;
+        }
+        .foot_list{font-size: 12px;}
+        .f_title{font-size: 24px; margin-bottom: 15px;}
+        .copy{
+            position: static;
+            transform: none;
+            font-size: 16px;
+        }
+
+        /* login */
+        .login_area .inner_01{width: 100%;}
+        form h2{font-size: 30px}
+        .input_area label{font-size: 16px; width: 40%;}
+        .btn_area #join, .btn_area #loginOk{
+            width: 120px;
+        }
+}
+
+/* 480px */
+
+@media screen and (max-width: 480px) {
+    header .m_gnb_area{
+        position: absolute;
+        top: 0; right: -100%;
+        width: 100%; height: 100vh;
+        background: #fff;
+    }
+
+    /* login */
+    form{padding: 40px; height: 90%; position: relative;}
+    .login_area .inner_01{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .input_area input{height: 40px;}
+    .input_area > div{flex-direction: column; margin-bottom: 30px;}
+    .btn_area{
+        position: absolute;
+        bottom: 30px; left: 50%;
+        width: 80%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .btn_area #join, .btn_area #loginOk{
+        width: 100%; height: 50px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* 320px */
+@media screen and (max-width:320px) {
+    
+}

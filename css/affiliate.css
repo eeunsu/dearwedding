@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+body{background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url(../img/affiliate/body_bg.jpg) no-repeat center/cover;}
+
+/* main_bg */
+.main_bg{
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)),url(../img/affiliate/main_bg.jpg) no-repeat center/cover;
+}
+.main_bg .title{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 400px;
+}
+.main_bg .title::before{
+    content: '';
+    position: absolute;
+    top: 100px; left: 0;
+    width: 112px; height: 5px;
+    background: #fff;
+}
+
+/* list */
+.list{margin-bottom: 100px;}
+.list ul{
+    overflow: hidden;
+}
+.list ul > li{
+    float: left;
+    width: 360px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    background: #fff;
+    transition: all 0.3s;
+}
+.list ul > li:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.list ul > li:nth-child(3),
+.list ul > li:nth-child(6),
+.list ul > li:nth-child(9){margin-right: 0;}
+.list ul > li figure{
+    width: 100%; height: 300px;
+    background:no-repeat center/cover;
+}
+.list ul > li:nth-child(1) figure{background-image: url(../img/affiliate/list_01.jpg);}
+.list ul > li:nth-child(2) figure{background-image: url(../img/affiliate/list_02.jpg);}
+.list ul > li:nth-child(3) figure{background-image: url(../img/affiliate/list_03.jpg);}
+.list ul > li:nth-child(4) figure{background-image: url(../img/affiliate/list_04.jpg);}
+.list ul > li:nth-child(5) figure{background-image: url(../img/affiliate/list_05.jpg);}
+.list ul > li:nth-child(6) figure{background-image: url(../img/affiliate/list_06.jpg);}
+.list ul > li:nth-child(7) figure{background-image: url(../img/affiliate/list_07.jpg);}
+.list ul > li:nth-child(8) figure{background-image: url(../img/affiliate/list_08.jpg);}
+.list ul > li:nth-child(9) figure{background-image: url(../img/affiliate/list_09.jpg);}
+.list ul > li .title{
+    margin-bottom: 0;
+    padding: 10px 15px; box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 600;
+    border-top: 5px solid #799d8a;
+    border-bottom: 3px solid rgba(249, 172, 151, 0.5);
+}
+.list ul > li .text{padding: 10px 15px; box-sizing: border-box;}
+.list ul > li .text > span a{
+    display: inline-block;
+    font-size: 17px;
+    padding: 5px 15px; box-sizing: border-box;
+    border: 1px solid #f9ad97;
+    border-radius: 50px;
+    margin-right: 5px;
+    transition: all 0.3s;
+}
+.list ul > li .text >span a:hover{background: #f9ad97; color:#fff;}

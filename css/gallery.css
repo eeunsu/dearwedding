@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import url(fonts.css);
+
+#wrap {position: relative;}
+
+/* main_bg */
+.main_bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ), url(../img/gallery/main_bg.jpg) no-repeat center/cover;
+    height: 400px;
+    margin-bottom: 100px;
+}
+.main_bg > .title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: "Dancing Script", cursive;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 350px;
+    
+}
+
+.gallery_area {position: relative;}
+
+/* gallery_tabBtn */
+.gallery_tabBtn {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;   
+    position: relative;
+}
+.gallery_tabBtn::before {
+    content: '';
+    position: absolute;
+    top: -23px; left: 50%;
+    transform: translateX(-50%);
+    width: 320px; height: 5px;
+    background: url(../img/common/frame_sub.png) no-repeat center/contain;
+}
+.gallery_tabBtn::after {
+    content: '';
+    position: absolute;
+    bottom: -23px; left: 50%;
+    transform: translateX(-50%);
+    width: 320px; height: 5px;
+    background: url(../img/common/frame_sub.png) no-repeat center/contain;
+}
+
+.gallery_tabBtn > li > a {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+    background: #fff;
+    padding: 20px 40px;
+    transition: all 0.3s;
+}
+.gallery_tabBtn > li:hover > a {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+/* gallery_modal - 이미지 눌렀을 때 뜨는 모달창 */
+.gallery_modal{
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) );
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.gallery_modal.on{display: flex;}
+
+/* gallery_modal의 .modalImg */
+.gallery_modal .modalImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.modalImg figure{width: 800px; height: 100%;}
+.modalImg figure img{width: 100%;}
+
+/* gallery_modal 닫기 버튼 */
+.gallery_modal .modalClose{
+    width: 40px; height: 40px;
+    position: absolute;
+    top: -5px; right: -40px;
+    font-size: 50px;
+    line-height: 30px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* gallery_tabMod (탭을 눌렀을 때 나오는 이미지 리스트) */
+.gallery_tabMod {margin-bottom: 100px;}
+.gallery_tabMod > ul.on {display: flex;}
+
+/* snap_gallery */
+.snap_gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    display: none;
+}
+.snap_gallery > li{
+    cursor: pointer;
+    width: 32%; 
+    height: 32%;
+    margin-bottom: 2%;
+}
+.snap_gallery > li > img {
+    width: 100%; height: 420px;
+    overflow: hidden; 
+    object-fit: cover;
+}
+
+/* studio_gallery */
+.studio_gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    display: none;
+    
+}
+.studio_gallery > li{
+    width: 32%; 
+    height: 32%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+.studio_gallery > li > img {
+    width: 100%; height: 420px;
+    overflow: hidden; 
+    object-fit: cover;
+}

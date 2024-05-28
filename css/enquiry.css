@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* body {background: url(../img/body_bg.jpg) no-repeat center/cover;} */
+
+/* main_bg */
+.main_bg {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2) ), url(../img/enquiry/main_bg.jpg) no-repeat center/cover;
+    height: 400px;
+    margin-bottom: 0;
+}
+.main_bg > .title.inner_01 > h2 {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 400px;
+}
+.main_bg > .title.inner_01 > h2::before {
+    position: absolute;
+    content: '';
+    width: 112px; height: 5px;
+    background: #fff;
+    top: 100px; left: 0;
+}
+
+
+/* section - form_area */
+.form_area {
+    margin: 100px 0;
+}
+.form_area form {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    box-shadow: 0px 5px 8px #ededed ;
+    padding: 100px;
+    box-sizing: border-box;
+    outline: 1px solid #f9ad97;
+    outline-offset: -20px;
+    background: #fff;
+    font-family: 'Nanum Myeongjo', serif;
+}
+.form_area form > ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.form_area form > ul > li {
+    width: 43%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.form_area form > ul > li > label {
+    font-size: 20px;
+    color: #7a9c8b;
+    margin-right: 20px;
+}
+.form_area form > ul > li > input {
+    width: 300px;
+    height: 45px;
+    border: 1px solid #7a9c8b;
+    outline: transparent;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.form_area form > ul > li > select {
+    width: 300px;
+    height: 45px;
+    font-size: 16px;
+    padding-left: 10px;
+    border: 1px solid #7a9c8b;
+    outline: transparent;
+}
+.form_area form > ul > li:last-child {
+    width: 100%;
+    align-items: normal;
+}
+.form_area form > ul > li:last-child > input {
+    width: 87%;
+    height: 150px;
+}
+
+
+
+/* button */
+.btn {text-align: center;}
+.form_area button {
+    border: none;
+    border-radius: 5px;
+    background: #f9ac97ab;
+    color: #555;
+    font-size: 20px;
+    margin-top: 50px;
+    padding: 15px 60px;
+    cursor: pointer;
+}
+.form_area button:hover {
+    transition: all 0.5s;
+    background: #f9ac97;
+    color: #fff;
+}

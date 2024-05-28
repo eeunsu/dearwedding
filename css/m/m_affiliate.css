@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url(../common.css);
+
+/* 1200px */
+.main_bg .title{margin-left: 2%;}
+.list ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    padding: 0 2%; box-sizing: border-box;
+}
+.list ul > li{
+    float: none;
+    width: 32%;
+    margin-bottom: 2.2%;
+    margin-right: 0;
+}
+/* 1050px */
+@media screen and (max-width: 1050px) {
+    /* main_bg */
+    .main_bg .title{
+        margin-left: 5%;
+        font-size: 40px;
+    }
+
+    /* list */
+    .list{padding: 0 2%;}
+    .list ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+    }
+    .list ul > li{
+        float: none;
+        width: 32%;
+        margin-bottom: 2.2%;
+        margin-right: 0;
+    }
+    .list ul > li figure{height: 230px;}
+    .list ul > li .text > span a{
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+}
+
+
+/* 1024px */
+@media screen and (max-width:1024px) {
+    
+}
+
+/* 768px */
+@media screen and (max-width:768px) {
+    .m_hide{display: none;}
+    /* main_bg */
+    .main_bg{height: 250px;}
+    .main_bg .title{
+        font-size: 35px;
+        line-height: 250px;
+    }
+    .main_bg .title::before{
+        width: 86px; height: 3px;
+        top: 70px;
+    }
+
+    /* list */
+    .list{padding: 0 3%;}
+    .list ul > li{width: 48%;}
+    .list ul > li figure{width: 100%; height: 250px;}
+    .list ul > li .title{font-size: 16px;}
+    .list ul > li:nth-child(6) figure,.list ul > li:nth-child(7) figure{background-position: top;}
+}
+
+/* 480px */
+
+@media screen and (max-width: 480px) {
+    .m_hide{display: none;}
+    /* main_bg */
+    .main_bg{height: 220px;}
+    .main_bg .title{line-height: 220px;}
+
+    /* list */
+    .list ul > li figure{height: 200px;}
+}
+
+/* 370px */
+@media screen and (max-width:370px) {
+    .main_bg{margin-bottom: 50px;}
+    .list ul > li{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+}
